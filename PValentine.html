@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Precious 💓</title>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <form>
+        <label>Name: </label>
+        <br>
+        <input id="name" type="text">
+        <input id="keyword" type="text">
+        <br>
+        <input id="submit" type="button" value="Submit Name">
+    </form>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <pre></pre>
+</body>
+</html>
+
+<style>
+    body {
+        margin-top: 20%;
+        text-align: center;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 1.5rem;
+    }
+    #keyword {
+        display: none;
+    }
+    p {
+        line-height: 0.8;
+    }
+</style>
+
+<script>
+    document.getElementById("submit").addEventListener("click",test);
+
+    function test() {
+        var name = document.getElementById("name").value;
+        name = name.toUpperCase();
+        document.getElementById("name").value = "";
+
+        if (name == "PRECIOUS") {
+            for (var i = 0; i<3; i++) {
+                document.querySelector("label").textContent = "Keyword: ";
+            }
+            
+            document.querySelector("body").style.margin = "20px auto";
+            document.querySelector("body").style.backgroundColor = "pink";
+
+            document.getElementById("name").style.display = "none";
+            document.getElementById("keyword").style.display = "initial";
+        }
+
+        var key = document.getElementById("keyword").value;
+        key = key.toUpperCase();
+        document.getElementById("keyword").value = "";
+
+        if (key == "POLLUX") {
+            console.log("pollux");
+            document.querySelector("label").textContent = "The other one this time ;) ";
+        }
+        else if (key == "CASTOR") {
+            var set = document.querySelectorAll("p");
+            set[0].innerHTML = "I think this will mean more if you read the whole thing before reacting <3";
+            set[1].innerHTML = "I can't express the state of happiness being around you puts me in - but I'll try.";
+            set[2].innerHTML = "Life, in general, is a mess. I've been content at Turner Fenton, but as you may have deduced, I need people in my life.";
+            set[3].innerHTML = "You also know how I do things rationally - so I made a list of people I liked, and evaluated it.";
+            set[4].innerHTML = "You came out at the top. But after our initial conversation, we agreed to drop it.";
+            set[5].innerHTML = "You asked before why it didn't seem to affect me - that's because I've had some... practice in dissociation.";
+            set[6].innerHTML = "I was ready to just accept it and move on.";
+            set[7].innerHTML = "But I'm brought to tears just thinking about how grateful I am for your crane.";
+            set[8].innerHTML = "Thank you. THANK YOU. Thank you very much.";
+            set[9].innerHTML = "I can't imagine being happier than I am right now - with you.";
+            set[10].innerHTML = "Whenever we hold hands, I just well up with some foreign, giddy feeling.";
+            set[11].innerHTML = "As we go on, I want to hug you. And look into your beautiful eyes. And maybe boop you on your adorable nose :P";
+            set[12].innerHTML = "I hope that you feel all of this too.";
+            set[13].innerHTML = "To that end, if you ever want something, please tell me. If you don't want to go in a direction, say so.";
+            set[14].innerHTML = "I also get the impression you want me to be more assertive - and I'll try to be better at that.";
+            set[15].innerHTML = "Really though, I just want us to get this right - ";
+            set[16].innerHTML = "to take this steadily, and enjoy every second of the time we have together.";
+            set[17].innerHTML = "Taking a cue from your story last night - I want you. <br><br>Press Enter<br><br>";
+
+            document.querySelector("body").addEventListener("keydown",event=> {if(event.keyCode == 13) {
+                document.querySelector("pre").innerHTML = "_____      _____<br>/d88888b\\ /d88888b\\<br>/d88888888V88888888b\\<br>888888 PRECIOUS 88888<br>\\Y88888888888888888Y/<br>\\Y888888888888888Y/<br>\\Y88888888888Y/<br>\\Y8888888Y/<br>'Y888Y'\n<br>Happy Valentine's Day, Precious ^_^";
+            }})
+        }
+    }
+
+</script>
